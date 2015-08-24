@@ -14,7 +14,7 @@
 #include <linux/slab.h>
 #include <linux/platform_device.h>
 
-#include <mach/sys_config.h>
+#include <plat/sys_config.h>
 
 #include "w1.h"
 #include "w1_int.h"
@@ -35,10 +35,10 @@ static struct platform_driver w1_sun5i_driver = {
 
 /* Init driver */
 static int w1_sun5i_probe_driver(struct platform_device *pdev) {
-    printk(KERN_INFO "%s()", __FUNCTION__);
     int err = 0;
     int w1_used = 0;
     struct w1_sun5i_platform_data *pdata = pdev->dev.platform_data;
+    printk(KERN_INFO "%s()", __FUNCTION__);
 
     if (!pdata) {
         printk(KERN_INFO "%s: Invalid platform_data!\n", __FUNCTION__);

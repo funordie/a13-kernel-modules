@@ -11,7 +11,7 @@
 #include <linux/delay.h>
 #include <asm/delay.h>
 
-#include <mach/sys_config.h>
+#include <plat/sys_config.h>
 
 #include "lcd1602.h"
 #include "../gpio_makros.h"

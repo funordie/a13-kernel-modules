@@ -20,7 +20,7 @@
 
 #include <asm/delay.h>
 
-#include <mach/sys_config.h>
+#include <plat/sys_config.h>
 
 #include "dht22-sun5i.h"
 
